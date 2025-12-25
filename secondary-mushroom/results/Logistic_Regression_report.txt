@@ -1,0 +1,19 @@
+Model: Logistic Regression
+Training Time: 0.2879 seconds
+------------------------------
+Accuracy: 0.6636
+F2 Score: 0.6619
+------------------------------
+Confusion Matrix:
+[[3005 2369]
+ [1740 5100]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.63      0.56      0.59      5374
+           1       0.68      0.75      0.71      6840
+
+    accuracy                           0.66     12214
+   macro avg       0.66      0.65      0.65     12214
+weighted avg       0.66      0.66      0.66     12214

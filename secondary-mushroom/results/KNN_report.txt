@@ -1,0 +1,19 @@
+Model: KNN
+Training Time: 0.1837 seconds
+------------------------------
+Accuracy: 0.9994
+F2 Score: 0.9994
+------------------------------
+Confusion Matrix:
+[[5372    2]
+ [   5 6835]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      5374
+           1       1.00      1.00      1.00      6840
+
+    accuracy                           1.00     12214
+   macro avg       1.00      1.00      1.00     12214
+weighted avg       1.00      1.00      1.00     12214
