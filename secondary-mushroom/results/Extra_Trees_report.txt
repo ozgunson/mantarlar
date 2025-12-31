@@ -1,5 +1,5 @@
 Model: Extra Trees
-Training Time: 1.2738 seconds
+Training Time: 1.2307 seconds
 ------------------------------
 Accuracy: 1.0000
 F2 Score: 1.0000

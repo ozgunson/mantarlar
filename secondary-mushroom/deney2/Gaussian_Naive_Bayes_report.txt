@@ -1,0 +1,19 @@
+Model: Gaussian Naive Bayes
+Training Time: 0.0074 seconds
+------------------------------
+Accuracy: 0.6154
+F2 Score: 0.6131
+------------------------------
+Confusion Matrix:
+[[7599 3225]
+ [6171 7433]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.55      0.70      0.62     10824
+           1       0.70      0.55      0.61     13604
+
+    accuracy                           0.62     24428
+   macro avg       0.62      0.62      0.62     24428
+weighted avg       0.63      0.62      0.62     24428

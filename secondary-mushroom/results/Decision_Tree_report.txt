@@ -1,5 +1,5 @@
 Model: Decision Tree
-Training Time: 0.1312 seconds
+Training Time: 0.1306 seconds
 ------------------------------
 Accuracy: 0.9977
 F2 Score: 0.9977

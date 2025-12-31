@@ -1,13 +1,13 @@
 Model: GRU
-Training Time: 60.3194 seconds
-Epochs Run: 23
+Training Time: 42.2521 seconds
+Epochs Run: 16
 ------------------------------
-Accuracy: 0.9999
-F2 Score: 0.9999
+Accuracy: 0.9980
+F2 Score: 0.9980
 ------------------------------
 Confusion Matrix:
-[[5374    0]
- [   1 6839]]
+[[5358   16]
+ [   8 6832]]
 
 Classification Report:
               precision    recall  f1-score   support

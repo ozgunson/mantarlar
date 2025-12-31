@@ -1,0 +1,15 @@
+Model Variation: SVM_C1.0
+Training Time: 0.3674 seconds
+------------------------------
+Accuracy: 0.6636
+F2 Score: 0.6617
+------------------------------
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.64      0.55      0.59      5374
+           1       0.68      0.75      0.71      6840
+
+    accuracy                           0.66     12214
+   macro avg       0.66      0.65      0.65     12214
+weighted avg       0.66      0.66      0.66     12214

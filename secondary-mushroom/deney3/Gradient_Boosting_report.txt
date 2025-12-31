@@ -1,0 +1,19 @@
+Model: Gradient Boosting
+Training Time: 3.4769 seconds
+------------------------------
+Accuracy: 0.9424
+F2 Score: 0.9423
+------------------------------
+Confusion Matrix:
+[[7492  616]
+ [ 440 9773]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.94      0.92      0.93      8108
+           1       0.94      0.96      0.95     10213
+
+    accuracy                           0.94     18321
+   macro avg       0.94      0.94      0.94     18321
+weighted avg       0.94      0.94      0.94     18321

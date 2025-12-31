@@ -1,13 +1,13 @@
 Model: ResNet
-Training Time: 9.5983 seconds
-Epochs Run: 19
+Training Time: 12.6438 seconds
+Epochs Run: 25
 ------------------------------
-Accuracy: 0.9995
-F2 Score: 0.9995
+Accuracy: 0.9998
+F2 Score: 0.9998
 ------------------------------
 Confusion Matrix:
-[[5373    1]
- [   5 6835]]
+[[5374    0]
+ [   3 6837]]
 
 Classification Report:
               precision    recall  f1-score   support

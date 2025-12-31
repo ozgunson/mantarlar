@@ -1,13 +1,13 @@
 Model: Bidirectional_LSTM
-Training Time: 136.6826 seconds
-Epochs Run: 30
+Training Time: 101.2409 seconds
+Epochs Run: 22
 ------------------------------
-Accuracy: 1.0000
-F2 Score: 1.0000
+Accuracy: 0.9996
+F2 Score: 0.9996
 ------------------------------
 Confusion Matrix:
-[[5374    0]
- [   0 6840]]
+[[5371    3]
+ [   2 6838]]
 
 Classification Report:
               precision    recall  f1-score   support

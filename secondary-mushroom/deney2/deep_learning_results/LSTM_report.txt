@@ -1,0 +1,20 @@
+Model: LSTM
+Training Time: 46.5727 seconds
+Epochs Run: 28
+------------------------------
+Accuracy: 0.9986
+F2 Score: 0.9986
+------------------------------
+Confusion Matrix:
+[[10802    22]
+ [   11 13593]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     10824
+           1       1.00      1.00      1.00     13604
+
+    accuracy                           1.00     24428
+   macro avg       1.00      1.00      1.00     24428
+weighted avg       1.00      1.00      1.00     24428

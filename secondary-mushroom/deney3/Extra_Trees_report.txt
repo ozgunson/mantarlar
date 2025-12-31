@@ -1,0 +1,19 @@
+Model: Extra Trees
+Training Time: 1.2691 seconds
+------------------------------
+Accuracy: 1.0000
+F2 Score: 1.0000
+------------------------------
+Confusion Matrix:
+[[ 8108     0]
+ [    0 10213]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      8108
+           1       1.00      1.00      1.00     10213
+
+    accuracy                           1.00     18321
+   macro avg       1.00      1.00      1.00     18321
+weighted avg       1.00      1.00      1.00     18321

@@ -1,0 +1,6 @@
+Model Variation: CNN_Filters_64
+Params: {'filters': 64} | Fit: {'batch_size': 64}
+------------------------------
+Accuracy: 0.9996
+F2 Score: 0.9996
+Epochs Run: 20

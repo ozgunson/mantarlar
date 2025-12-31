@@ -1,5 +1,5 @@
 Model: Linear SVM
-Training Time: 0.3756 seconds
+Training Time: 0.3568 seconds
 ------------------------------
 Accuracy: 0.6636
 F2 Score: 0.6617

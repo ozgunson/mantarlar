@@ -1,5 +1,5 @@
 Model: Gradient Boosting
-Training Time: 3.7831 seconds
+Training Time: 4.0961 seconds
 ------------------------------
 Accuracy: 0.9361
 F2 Score: 0.9360

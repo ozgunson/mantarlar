@@ -1,13 +1,13 @@
 Model: DNN_Wide
-Training Time: 7.7049 seconds
+Training Time: 7.6844 seconds
 Epochs Run: 30
 ------------------------------
-Accuracy: 0.9998
-F2 Score: 0.9998
+Accuracy: 0.9997
+F2 Score: 0.9997
 ------------------------------
 Confusion Matrix:
 [[5372    2]
- [   0 6840]]
+ [   2 6838]]
 
 Classification Report:
               precision    recall  f1-score   support

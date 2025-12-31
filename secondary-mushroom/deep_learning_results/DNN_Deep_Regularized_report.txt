@@ -1,13 +1,13 @@
 Model: DNN_Deep_Regularized
-Training Time: 11.8797 seconds
-Epochs Run: 30
+Training Time: 11.1568 seconds
+Epochs Run: 27
 ------------------------------
-Accuracy: 0.9980
-F2 Score: 0.9980
+Accuracy: 0.9978
+F2 Score: 0.9978
 ------------------------------
 Confusion Matrix:
-[[5359   15]
- [  10 6830]]
+[[5368    6]
+ [  21 6819]]
 
 Classification Report:
               precision    recall  f1-score   support

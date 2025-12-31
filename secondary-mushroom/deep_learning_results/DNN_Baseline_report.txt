@@ -1,13 +1,13 @@
 Model: DNN_Baseline
-Training Time: 6.4725 seconds
-Epochs Run: 25
+Training Time: 7.8338 seconds
+Epochs Run: 30
 ------------------------------
-Accuracy: 0.9991
-F2 Score: 0.9991
+Accuracy: 0.9996
+F2 Score: 0.9996
 ------------------------------
 Confusion Matrix:
-[[5366    8]
- [   3 6837]]
+[[5370    4]
+ [   1 6839]]
 
 Classification Report:
               precision    recall  f1-score   support

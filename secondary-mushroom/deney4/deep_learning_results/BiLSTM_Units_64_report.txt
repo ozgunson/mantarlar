@@ -1,0 +1,6 @@
+Model Variation: BiLSTM_Units_64
+Params: {'units': 64} | Fit: {'batch_size': 64}
+------------------------------
+Accuracy: 0.9986
+F2 Score: 0.9986
+Epochs Run: 13

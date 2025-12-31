@@ -1,0 +1,6 @@
+Model Variation: ResNet_Dense_128
+Params: {'dense_units': 128} | Fit: {'batch_size': 64}
+------------------------------
+Accuracy: 0.9989
+F2 Score: 0.9989
+Epochs Run: 12

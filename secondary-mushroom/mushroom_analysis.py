@@ -127,20 +127,42 @@ def train_and_evaluate_models(X_train, X_test, y_train, y_test, output_dir):
     
     return comparison_df
 
+def run_experiment(X, y, test_size, output_dir_name):
+    """
+    Runs a single experiment with a specific test size and output directory.
+    """
+    output_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), output_dir_name)
+    
+    print(f"\n{'='*40}")
+    print(f"Running Experiment: {output_dir_name}")
+    print(f"Test Size: {test_size} (Train: {1-test_size:.1f})")
+    print(f"Output Directory: {output_path}")
+    print(f"{'='*40}\n")
+    
+    # Split Data
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size, random_state=42)
+    
+    # Train and Evaluate
+    results_df = train_and_evaluate_models(X_train, X_test, y_train, y_test, output_path)
+    
+    print(f"\n--- Model Comparison for {output_dir_name} ---")
+    print(results_df.sort_values(by="Accuracy", ascending=False).to_string(index=False))
+
 if __name__ == "__main__":
     # Construct path relative to this script's location
     current_dir = os.path.dirname(os.path.abspath(__file__))
     DATA_PATH = os.path.join(current_dir, "../MushroomDataset/secondary_data.csv")
-    OUTPUT_DIR = os.path.join(current_dir, "results")
     
-    # Load and Preprocess
+    # Load and Preprocess once
     X, y, mappings = load_and_preprocess_data(DATA_PATH)
     
-    # Split Data
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    # Define experiments
+    experiments = [
+        {"test_size": 0.2, "output_dir": "results"},      # Original: 80% Train, 20% Test
+        {"test_size": 0.4, "output_dir": "deney2"},       # Deney 2: 60% Train, 40% Test
+        {"test_size": 0.3, "output_dir": "deney3"}        # Deney 3: 70% Train, 30% Test
+    ]
     
-    # Train and Evaluate
-    results_df = train_and_evaluate_models(X_train, X_test, y_train, y_test, OUTPUT_DIR)
-    
-    print("\n--- Final Model Comparison ---")
-    print(results_df.sort_values(by="Accuracy", ascending=False).to_string(index=False))
+    # Run all experiments
+    for exp in experiments:
+        run_experiment(X, y, exp["test_size"], exp["output_dir"])

@@ -1,5 +1,5 @@
 Model: Logistic Regression
-Training Time: 0.2879 seconds
+Training Time: 0.2914 seconds
 ------------------------------
 Accuracy: 0.6636
 F2 Score: 0.6619

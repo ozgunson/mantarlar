@@ -1,0 +1,5 @@
+Model Variation: DNN_Base_LR0.01
+Params: {'learning_rate': 0.01} | Fit: {'batch_size': 64}
+------------------------------
+Accuracy: 0.9840
+F2 Score: 0.9839

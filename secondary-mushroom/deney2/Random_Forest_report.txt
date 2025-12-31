@@ -1,0 +1,19 @@
+Model: Random Forest
+Training Time: 1.9190 seconds
+------------------------------
+Accuracy: 1.0000
+F2 Score: 1.0000
+------------------------------
+Confusion Matrix:
+[[10824     0]
+ [    1 13603]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     10824
+           1       1.00      1.00      1.00     13604
+
+    accuracy                           1.00     24428
+   macro avg       1.00      1.00      1.00     24428
+weighted avg       1.00      1.00      1.00     24428

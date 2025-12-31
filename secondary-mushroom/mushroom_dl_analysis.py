@@ -259,15 +259,41 @@ def train_and_evaluate_dl_models(X_train, X_test, y_train, y_test, output_dir):
     
     return comparison_df
 
+def run_dl_experiment(X, y, test_size, output_dir_name):
+    """
+    Runs a single DL experiment with a specific test size and output directory.
+    """
+    output_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), output_dir_name)
+    
+    print(f"\n{'='*40}")
+    print(f"Running Experiment: {output_dir_name}")
+    print(f"Test Size: {test_size} (Train: {1-test_size:.1f})")
+    print(f"Output Directory: {output_path}")
+    print(f"{'='*40}\n")
+    
+    # Split Data
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size, random_state=42)
+    
+    # Train and Evaluate
+    results_df = train_and_evaluate_dl_models(X_train, X_test, y_train, y_test, output_path)
+    
+    print(f"\n--- DL Model Comparison for {output_dir_name} ---")
+    print(results_df.sort_values(by="Accuracy", ascending=False).to_string(index=False))
+
 if __name__ == "__main__":
     current_dir = os.path.dirname(os.path.abspath(__file__))
     DATA_PATH = os.path.join(current_dir, "../MushroomDataset/secondary_data.csv")
-    OUTPUT_DIR = os.path.join(current_dir, "deep_learning_results")
     
+    # Load and Preprocess Once
     X, y, le_y, scaler = load_and_preprocess_data(DATA_PATH)
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
     
-    results_df = train_and_evaluate_dl_models(X_train, X_test, y_train, y_test, OUTPUT_DIR)
+    # Define Experiments
+    experiments = [
+        {"test_size": 0.2, "output_dir": "deep_learning_results"},           # Original
+        {"test_size": 0.4, "output_dir": "deney2/deep_learning_results"},    # Deney 2
+        {"test_size": 0.3, "output_dir": "deney3/deep_learning_results"}     # Deney 3
+    ]
     
-    print("\n--- Final DL Model Comparison ---")
-    print(results_df.sort_values(by="Accuracy", ascending=False).to_string(index=False))
+    # Run All Experiments
+    for exp in experiments:
+        run_dl_experiment(X, y, exp["test_size"], exp["output_dir"])

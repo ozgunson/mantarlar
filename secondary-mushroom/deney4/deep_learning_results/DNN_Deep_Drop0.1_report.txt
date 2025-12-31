@@ -1,0 +1,5 @@
+Model Variation: DNN_Deep_Drop0.1
+Params: {'dropout_rate': 0.1} | Fit: {'batch_size': 64}
+------------------------------
+Accuracy: 0.9989
+F2 Score: 0.9989

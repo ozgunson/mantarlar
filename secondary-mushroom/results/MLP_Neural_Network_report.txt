@@ -1,5 +1,5 @@
 Model: MLP Neural Network
-Training Time: 5.1937 seconds
+Training Time: 5.5151 seconds
 ------------------------------
 Accuracy: 0.9997
 F2 Score: 0.9997

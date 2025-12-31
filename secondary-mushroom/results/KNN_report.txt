@@ -1,5 +1,5 @@
 Model: KNN
-Training Time: 0.1837 seconds
+Training Time: 0.2477 seconds
 ------------------------------
 Accuracy: 0.9994
 F2 Score: 0.9994

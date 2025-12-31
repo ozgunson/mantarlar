@@ -1,5 +1,5 @@
 Model: Gaussian Naive Bayes
-Training Time: 0.0099 seconds
+Training Time: 0.0143 seconds
 ------------------------------
 Accuracy: 0.6168
 F2 Score: 0.6140

@@ -1,5 +1,5 @@
 Model: CNN_1D
-Training Time: 17.9551 seconds
+Training Time: 18.6614 seconds
 Epochs Run: 30
 ------------------------------
 Accuracy: 1.0000

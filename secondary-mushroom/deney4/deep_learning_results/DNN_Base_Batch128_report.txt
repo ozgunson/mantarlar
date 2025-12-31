@@ -1,0 +1,5 @@
+Model Variation: DNN_Base_Batch128
+Params: {} | Fit: {'batch_size': 128}
+------------------------------
+Accuracy: 0.9998
+F2 Score: 0.9998

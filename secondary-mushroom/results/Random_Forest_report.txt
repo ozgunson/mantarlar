@@ -1,5 +1,5 @@
 Model: Random Forest
-Training Time: 2.2595 seconds
+Training Time: 2.3011 seconds
 ------------------------------
 Accuracy: 1.0000
 F2 Score: 1.0000
